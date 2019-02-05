@@ -48,6 +48,7 @@
   <ItemGroup>
     <Compile Include="CalculatorTests.cs" />
     <Compile Include="OperationOneArgumentsTests\BinaryCalculatorTests.cs" />
+    <Compile Include="OperationOneArgumentsTests\DecimalCalculatorTests.cs" />
     <Compile Include="OperationOneArgumentsTests\OneArgumentsFactoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
