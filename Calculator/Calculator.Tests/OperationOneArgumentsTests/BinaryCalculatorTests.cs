@@ -1,16 +1,16 @@
-﻿using NUnit.Framework;
-using Calculator.OperationOneArguments;
+﻿using Calculator.OperationOneArguments;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Calculator.Tests.OperationOneArgumentsTests
+namespace Calculator.Tests
 {
-    [TestFixture]
-    class BinaryCalculatorTests
+    [TestClass]
+    public class BinaryCalculatorTests
     {
-        [Test]
+        [TestMethod]
         public void BinaryCalculatorTest()
         {
             BinaryCalculator calculator = new BinaryCalculator();
-            Assert.AreEqual(111, calculator.Calculate("7"));
+            Assert.AreEqual("111", calculator.Calculate("7"));
         }
     }
 }

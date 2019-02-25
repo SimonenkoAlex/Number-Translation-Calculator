@@ -4,7 +4,7 @@ using Calculator.OperationOneArguments;
 
 namespace Calculator.Tests.OperationOneArgumentsTests
 {
-    class OneArgumentsFactoryTests
+    public class OneArgumentsFactoryTests
     {
         [TestCase("btnBinary", typeof(BinaryCalculator))]
         [TestCase("btnDecimal", typeof(DecimalCalculator))]
