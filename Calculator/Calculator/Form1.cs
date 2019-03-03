@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 using Calculator.OperationOneArguments;
-using Calculator.OperationTwoArguments;
 
 namespace Calculator
 {
@@ -46,20 +45,6 @@ namespace Calculator
             }
             catch (Exception exception) {
                 textBox1.Text = exception.Message;
-            }
-        }
-
-        private void btnSignChange_Click(object sender, EventArgs e)
-        {
-            if (znak == true)
-            {
-                textBox1.Text = "-" + textBox1.Text;
-                znak = false;
-            }
-            else if (znak == false)
-            {
-                textBox1.Text = textBox1.Text.Replace("-", "");
-                znak = true;
             }
         }
     }

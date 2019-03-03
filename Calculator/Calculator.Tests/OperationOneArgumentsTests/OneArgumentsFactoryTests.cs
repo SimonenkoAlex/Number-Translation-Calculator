@@ -1,17 +1,18 @@
-﻿using System;
-using NUnit.Framework;
-using Calculator.OperationOneArguments;
+﻿using Calculator.OperationOneArguments;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Calculator.Tests.OperationOneArgumentsTests
 {
+    [TestClass]
     public class OneArgumentsFactoryTests
     {
-        [TestCase("btnBinary", typeof(BinaryCalculator))]
-        [TestCase("btnDecimal", typeof(DecimalCalculator))]
-        public void CalculateTest(string name, Type type)
+        [TestMethod]
+        public void CalculateTest()
         {
-            var calculator = OneArgumentsFactory.CreateCalculator(name);
-            Assert.IsInstanceOf(type, calculator);
+            var calculatorBinary = OneArgumentsFactory.CreateCalculator("btnBinary");
+            Assert.IsInstanceOfType(calculatorBinary, typeof(BinaryCalculator));
+            var calculatorDecimal = OneArgumentsFactory.CreateCalculator("btnDecimal");
+            Assert.IsInstanceOfType(calculatorDecimal, typeof(DecimalCalculator));
         }
     }
 }

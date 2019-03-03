@@ -10,6 +10,7 @@ namespace Calculator.OperationOneArguments
             {
                 case "btnBinary": return new BinaryCalculator();
                 case "btnDecimal": return new DecimalCalculator();
+                case "SignChange": return new NegationCalculator();
                 default: throw new Exception("Неизвестная операция");
             }
 

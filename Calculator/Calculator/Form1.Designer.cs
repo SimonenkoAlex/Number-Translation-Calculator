@@ -200,9 +200,9 @@
             // btnBinary
             // 
             this.btnBinary.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnBinary.Location = new System.Drawing.Point(165, 90);
+            this.btnBinary.Location = new System.Drawing.Point(165, 115);
             this.btnBinary.Name = "btnBinary";
-            this.btnBinary.Size = new System.Drawing.Size(45, 45);
+            this.btnBinary.Size = new System.Drawing.Size(45, 70);
             this.btnBinary.TabIndex = 2;
             this.btnBinary.Text = "BIN";
             this.btnBinary.UseVisualStyleBackColor = true;
@@ -213,7 +213,7 @@
             this.btnDecimal.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnDecimal.Location = new System.Drawing.Point(165, 39);
             this.btnDecimal.Name = "btnDecimal";
-            this.btnDecimal.Size = new System.Drawing.Size(45, 45);
+            this.btnDecimal.Size = new System.Drawing.Size(45, 70);
             this.btnDecimal.TabIndex = 3;
             this.btnDecimal.Text = "DEC";
             this.btnDecimal.UseVisualStyleBackColor = true;
@@ -229,7 +229,7 @@
             this.SignChange.TabIndex = 1;
             this.SignChange.Text = "+/-";
             this.SignChange.UseVisualStyleBackColor = false;
-            this.SignChange.Click += new System.EventHandler(this.btnSignChange_Click);
+            this.SignChange.Click += new System.EventHandler(this.button_Click);
             // 
             // Form1
             // 

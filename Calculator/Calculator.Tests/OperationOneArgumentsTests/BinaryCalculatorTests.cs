@@ -11,6 +11,7 @@ namespace Calculator.Tests
         {
             BinaryCalculator calculator = new BinaryCalculator();
             Assert.AreEqual("111", calculator.Calculate("7"));
+            Assert.AreEqual("11111111111111111111111111111001", calculator.Calculate("-7"));
         }
     }
 }

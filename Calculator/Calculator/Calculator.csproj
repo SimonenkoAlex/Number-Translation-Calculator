@@ -60,10 +60,8 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="OperationOneArguments\IOneArgumentsCalculator.cs" />
+    <Compile Include="OperationOneArguments\NegationCalculator.cs" />
     <Compile Include="OperationOneArguments\OneArgumentsFactory.cs" />
-    <Compile Include="OperationTwoArguments\AdditionBinaryCalculator.cs" />
-    <Compile Include="OperationTwoArguments\ITwoArgumentsCalculator.cs" />
-    <Compile Include="OperationTwoArguments\TwoArgumentsFactoryBinary.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
