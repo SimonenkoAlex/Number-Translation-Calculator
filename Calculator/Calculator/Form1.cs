@@ -10,7 +10,6 @@ namespace Calculator
         {
             InitializeComponent();
         }
-        bool znak = true;
         // Обработчик события нажатия на цифровую кнопку
         private void btn_Click(object sender, EventArgs e)
         {
