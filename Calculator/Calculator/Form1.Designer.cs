@@ -229,7 +229,7 @@
             this.SignChange.TabIndex = 1;
             this.SignChange.Text = "+/-";
             this.SignChange.UseVisualStyleBackColor = false;
-            this.SignChange.Click += new System.EventHandler(this.button_Click);
+            this.SignChange.Click += new System.EventHandler(this.btnSignChange_Click);
             // 
             // Form1
             // 

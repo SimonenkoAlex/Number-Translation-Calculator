@@ -10,6 +10,7 @@ namespace Calculator
         {
             InitializeComponent();
         }
+        int numberSystem = 10;
         // Обработчик события нажатия на цифровую кнопку
         private void btn_Click(object sender, EventArgs e)
         {
@@ -40,11 +41,19 @@ namespace Calculator
             {
                 string firstArgument = textBox1.Text;
                 IOneArgumentsCalculator calculator = OneArgumentsFactory.CreateCalculator(((Button)sender).Name);
+                if (((Button)sender).Name == "btnBinary") numberSystem = 2;
                 textBox1.Text = calculator.Calculate(firstArgument);
             }
             catch (Exception exception) {
                 textBox1.Text = exception.Message;
             }
+        }
+
+        private void btnSignChange_Click(object sender, EventArgs e)
+        {
+            int firstArgument = Convert.ToInt32(textBox1.Text);
+            // Преобразует целое число в эквивалентное строковое представление в 2-ичной С.С.                 
+            textBox1.Text = Convert.ToString((numberSystem == 10) ? ~firstArgument + 1 : ~firstArgument, numberSystem);
         }
     }
 }

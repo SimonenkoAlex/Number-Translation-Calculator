@@ -60,7 +60,6 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="OperationOneArguments\IOneArgumentsCalculator.cs" />
-    <Compile Include="OperationOneArguments\NegationCalculator.cs" />
     <Compile Include="OperationOneArguments\OneArgumentsFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
