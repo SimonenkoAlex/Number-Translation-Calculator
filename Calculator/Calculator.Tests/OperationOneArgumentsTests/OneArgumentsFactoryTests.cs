@@ -13,8 +13,6 @@ namespace Calculator.Tests.OperationOneArgumentsTests
             Assert.IsInstanceOfType(calculatorBinary, typeof(BinaryCalculator));
             var calculatorDecimal = OneArgumentsFactory.CreateCalculator("btnDecimal");
             Assert.IsInstanceOfType(calculatorDecimal, typeof(DecimalCalculator));
-            var calculatorNegation = OneArgumentsFactory.CreateCalculator("SignChange");
-            Assert.IsInstanceOfType(calculatorNegation, typeof(NegationCalculator));
         }
     }
 }

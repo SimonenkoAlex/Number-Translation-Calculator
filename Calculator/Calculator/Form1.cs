@@ -33,6 +33,7 @@ namespace Calculator
         private void btnClear_Click(object sender, EventArgs e)
         {
             textBox1.Text = "0";
+            numberSystem = 10;
         }
 
         private void button_Click(object sender, EventArgs e)
@@ -42,6 +43,7 @@ namespace Calculator
                 string firstArgument = textBox1.Text;
                 IOneArgumentsCalculator calculator = OneArgumentsFactory.CreateCalculator(((Button)sender).Name);
                 if (((Button)sender).Name == "btnBinary") numberSystem = 2;
+                if (((Button)sender).Name == "btnDecimal") numberSystem = 10;
                 textBox1.Text = calculator.Calculate(firstArgument);
             }
             catch (Exception exception) {
