@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using Calculator.OperationOneArguments;
+using Calculator.OperationTwoArguments;
 
 namespace Calculator
 {
@@ -40,9 +41,10 @@ namespace Calculator
             try
             {
                 string firstArgument = textBox1.Text;
-                IOneArgumentsCalculator calculator = OneArgumentsFactory.CreateCalculator(((Button)sender).Name);
-                if (((Button)sender).Name == "btnBinary") numberSystem = 2;
-                if (((Button)sender).Name == "btnDecimal") numberSystem = 10;
+                string nameButton = ((Button)sender).Name;
+                IOneArgumentsCalculator calculator = OneArgumentsFactory.CreateCalculator(nameButton);
+                if (nameButton == "btnBinary") numberSystem = 2;
+                if (nameButton == "btnDecimal") numberSystem = 10;
                 textBox1.Text = calculator.Calculate(firstArgument);
             }
             catch (Exception exception) {
@@ -53,8 +55,9 @@ namespace Calculator
         private void btnSignChange_Click(object sender, EventArgs e)
         {
             int firstArgument = Convert.ToInt32(textBox1.Text);
+            ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(numberSystem);
             // Преобразует целое число в эквивалентное строковое представление в 2-ичной С.С.                 
-            textBox1.Text = Convert.ToString((numberSystem == 10) ? ~firstArgument + 1 : ~firstArgument, numberSystem);
+            textBox1.Text = Convert.ToString(calculator.Calculate(firstArgument, numberSystem));
         }
     }
 }

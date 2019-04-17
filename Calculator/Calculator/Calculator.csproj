@@ -61,6 +61,10 @@
     </Compile>
     <Compile Include="OperationOneArguments\IOneArgumentsCalculator.cs" />
     <Compile Include="OperationOneArguments\OneArgumentsFactory.cs" />
+    <Compile Include="OperationTwoArguments\ITwoArgumentsCalculator.cs" />
+    <Compile Include="OperationTwoArguments\SignChangeBinary.cs" />
+    <Compile Include="OperationTwoArguments\SignChangeDecimal.cs" />
+    <Compile Include="OperationTwoArguments\TwoArgumentsFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
