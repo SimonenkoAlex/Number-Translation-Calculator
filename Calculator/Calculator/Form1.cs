@@ -14,7 +14,6 @@ namespace Calculator
         // Обработчик события нажатия на цифровую кнопку
         private void btn_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text == "0") textBox1.Text = null; // если в текстовом поле есть ноль, то он стирается
             textBox1.Text = textBox1.Text + (sender as Button).Text; // и добавляется цифра, отображённая на кнопке
         }
         // Обработчик события для удаления последнего символа
@@ -32,7 +31,7 @@ namespace Calculator
         // Обработчик события для удаления всей строки в текстовом поле
         private void btnClear_Click(object sender, EventArgs e)
         {
-            textBox1.Text = "0";
+            textBox1.Text = null;
             numberSystem = 10;
         }
 
