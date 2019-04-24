@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
 using Calculator.OperationOneArguments;
-using Calculator.OperationTwoArguments;
 
 namespace Calculator
 {
@@ -36,6 +35,25 @@ namespace Calculator
             numberSystem = 10;
         }
 
+        private void enabledButton(string nameButton)
+        {
+            switch (nameButton)
+            {
+                case "btnBinary":
+                    button2.Enabled = true; button3.Enabled = true; // Включение кнопок
+                    button4.Enabled = true; button5.Enabled = true;
+                    button6.Enabled = true; button7.Enabled = true;
+                    button8.Enabled = true; button9.Enabled = true;
+                    break;
+                case "btnDecimal":
+                    button2.Enabled = false; button3.Enabled = false; // Отключение кнопок
+                    button4.Enabled = false; button5.Enabled = false;
+                    button6.Enabled = false; button7.Enabled = false;
+                    button8.Enabled = false; button9.Enabled = false;
+                    break;
+            }
+        }
+
         private void button_Click(object sender, EventArgs e)
         {
             try
@@ -43,21 +61,12 @@ namespace Calculator
                 string firstArgument = textBox1.Text;
                 string nameButton = ((Button)sender).Name;
                 IOneArgumentsCalculator calculator = OneArgumentsFactory.CreateCalculator(nameButton);
-                if (nameButton == "btnBinary") numberSystem = 2;
-                if (nameButton == "btnDecimal") numberSystem = 10;
+                enabledButton(nameButton);
                 textBox1.Text = calculator.Calculate(firstArgument);
             }
             catch (Exception exception) {
                 textBox1.Text = exception.Message;
             }
-        }
-
-        private void btnSignChange_Click(object sender, EventArgs e)
-        {
-            int firstArgument = Convert.ToInt32(textBox1.Text);
-            ITwoArgumentsCalculator calculator = TwoArgumentsFactory.CreateCalculator(numberSystem);
-            // Преобразует целое число в эквивалентное строковое представление в 2-ичной С.С.                 
-            textBox1.Text = Convert.ToString(calculator.Calculate(firstArgument, numberSystem));
         }
     }
 }

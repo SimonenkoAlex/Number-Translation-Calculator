@@ -43,21 +43,20 @@
             this.btnZero = new System.Windows.Forms.Button();
             this.btnBinary = new System.Windows.Forms.Button();
             this.btnDecimal = new System.Windows.Forms.Button();
-            this.SignChange = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(198, 20);
+            this.textBox1.Size = new System.Drawing.Size(195, 20);
             this.textBox1.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Info;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(12, 191);
+            this.button1.Location = new System.Drawing.Point(60, 191);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(45, 45);
             this.button1.TabIndex = 1;
@@ -69,7 +68,7 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Info;
             this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(63, 191);
+            this.button2.Location = new System.Drawing.Point(111, 191);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(45, 45);
             this.button2.TabIndex = 1;
@@ -81,7 +80,7 @@
             // 
             this.button3.BackColor = System.Drawing.SystemColors.Info;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(114, 191);
+            this.button3.Location = new System.Drawing.Point(162, 191);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(45, 45);
             this.button3.TabIndex = 1;
@@ -93,7 +92,7 @@
             // 
             this.button4.BackColor = System.Drawing.SystemColors.Info;
             this.button4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(12, 140);
+            this.button4.Location = new System.Drawing.Point(60, 140);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(45, 45);
             this.button4.TabIndex = 1;
@@ -105,7 +104,7 @@
             // 
             this.button5.BackColor = System.Drawing.SystemColors.Info;
             this.button5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(63, 140);
+            this.button5.Location = new System.Drawing.Point(111, 140);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(45, 45);
             this.button5.TabIndex = 1;
@@ -117,7 +116,7 @@
             // 
             this.button6.BackColor = System.Drawing.SystemColors.Info;
             this.button6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.Location = new System.Drawing.Point(114, 140);
+            this.button6.Location = new System.Drawing.Point(162, 140);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(45, 45);
             this.button6.TabIndex = 1;
@@ -129,7 +128,7 @@
             // 
             this.button7.BackColor = System.Drawing.SystemColors.Info;
             this.button7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button7.Location = new System.Drawing.Point(12, 89);
+            this.button7.Location = new System.Drawing.Point(60, 89);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(45, 45);
             this.button7.TabIndex = 1;
@@ -141,7 +140,7 @@
             // 
             this.button8.BackColor = System.Drawing.SystemColors.Info;
             this.button8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.Location = new System.Drawing.Point(63, 89);
+            this.button8.Location = new System.Drawing.Point(111, 89);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(45, 45);
             this.button8.TabIndex = 1;
@@ -153,7 +152,7 @@
             // 
             this.button9.BackColor = System.Drawing.SystemColors.Info;
             this.button9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button9.Location = new System.Drawing.Point(114, 89);
+            this.button9.Location = new System.Drawing.Point(162, 89);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(45, 45);
             this.button9.TabIndex = 1;
@@ -165,7 +164,7 @@
             // 
             this.btnPointer.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnPointer.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnPointer.Location = new System.Drawing.Point(12, 38);
+            this.btnPointer.Location = new System.Drawing.Point(9, 89);
             this.btnPointer.Name = "btnPointer";
             this.btnPointer.Size = new System.Drawing.Size(45, 45);
             this.btnPointer.TabIndex = 1;
@@ -177,7 +176,7 @@
             // 
             this.btnClear.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnClear.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnClear.Location = new System.Drawing.Point(63, 38);
+            this.btnClear.Location = new System.Drawing.Point(9, 140);
             this.btnClear.Name = "btnClear";
             this.btnClear.Size = new System.Drawing.Size(45, 45);
             this.btnClear.TabIndex = 1;
@@ -189,7 +188,7 @@
             // 
             this.btnZero.BackColor = System.Drawing.SystemColors.Info;
             this.btnZero.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnZero.Location = new System.Drawing.Point(166, 191);
+            this.btnZero.Location = new System.Drawing.Point(10, 191);
             this.btnZero.Name = "btnZero";
             this.btnZero.Size = new System.Drawing.Size(44, 45);
             this.btnZero.TabIndex = 1;
@@ -200,9 +199,9 @@
             // btnBinary
             // 
             this.btnBinary.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnBinary.Location = new System.Drawing.Point(165, 115);
+            this.btnBinary.Location = new System.Drawing.Point(111, 38);
             this.btnBinary.Name = "btnBinary";
-            this.btnBinary.Size = new System.Drawing.Size(45, 70);
+            this.btnBinary.Size = new System.Drawing.Size(96, 45);
             this.btnBinary.TabIndex = 2;
             this.btnBinary.Text = "BIN";
             this.btnBinary.UseVisualStyleBackColor = true;
@@ -211,36 +210,23 @@
             // btnDecimal
             // 
             this.btnDecimal.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnDecimal.Location = new System.Drawing.Point(165, 39);
+            this.btnDecimal.Location = new System.Drawing.Point(12, 38);
             this.btnDecimal.Name = "btnDecimal";
-            this.btnDecimal.Size = new System.Drawing.Size(45, 70);
+            this.btnDecimal.Size = new System.Drawing.Size(93, 45);
             this.btnDecimal.TabIndex = 3;
             this.btnDecimal.Text = "DEC";
             this.btnDecimal.UseVisualStyleBackColor = true;
             this.btnDecimal.Click += new System.EventHandler(this.button_Click);
-            // 
-            // SignChange
-            // 
-            this.SignChange.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.SignChange.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.SignChange.Location = new System.Drawing.Point(114, 38);
-            this.SignChange.Name = "SignChange";
-            this.SignChange.Size = new System.Drawing.Size(45, 45);
-            this.SignChange.TabIndex = 1;
-            this.SignChange.Text = "+/-";
-            this.SignChange.UseVisualStyleBackColor = false;
-            this.SignChange.Click += new System.EventHandler(this.btnSignChange_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ScrollBar;
-            this.ClientSize = new System.Drawing.Size(215, 242);
+            this.ClientSize = new System.Drawing.Size(214, 241);
             this.Controls.Add(this.btnDecimal);
             this.Controls.Add(this.btnBinary);
             this.Controls.Add(this.btnZero);
-            this.Controls.Add(this.SignChange);
             this.Controls.Add(this.btnClear);
             this.Controls.Add(this.btnPointer);
             this.Controls.Add(this.button9);
@@ -277,7 +263,6 @@
         private System.Windows.Forms.Button btnZero;
         private System.Windows.Forms.Button btnBinary;
         private System.Windows.Forms.Button btnDecimal;
-        private System.Windows.Forms.Button SignChange;
     }
 }
 
